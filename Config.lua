@@ -10,10 +10,10 @@ end
 
 return
 {
-    TRAINING_PATH = '/home/ehoffer/Datasets/ImageNet/train/', --Training images location
-    VALIDATION_PATH = '/home/ehoffer/Datasets/ImageNet/validation/',  --Validation images location
-    VALIDATION_DIR = '/home/ehoffer/Datasets/ImageNet/LMDB/validation/', --Validation LMDB location
-    TRAINING_DIR = '/home/ehoffer/Datasets/ImageNet/LMDB/train/', --Training LMDB location
+    TRAINING_PATH = '/data/tmp/xiaohui/imagenet/train/', --Training images location
+    VALIDATION_PATH = '/data/tmp/xiaohui/imagenet/val/',  --Validation images location
+    VALIDATION_DIR = '/data/tmp/xiaohui/imagenet/LMDB/val/', --Validation LMDB location
+    TRAINING_DIR = '/data/tmp/xiaohui/imagenet/LMDB/train/', --Training LMDB location
     ImageMinSide = 256, --Minimum side length of saved images
     ValidationLabels = torch.load('./ValidationLabels'),
     ImageNetClasses = ImageNetClasses,

@@ -2,7 +2,7 @@ require 'torch'
 require 'optim'
 require 'pl'
 require 'eladtools'
-require 'trepl'
+--require 'trepl'
 local DataProvider = require 'DataProvider'
 
 ----------------------------------------------------------------------
@@ -29,7 +29,7 @@ cmd:option('-testonly',           false,                    'Just test loaded ne
 
 cmd:text('===>Platform Optimization')
 cmd:option('-threads',            8,                        'number of threads')
-cmd:option('-type',               'cuda',                   'float or cuda')
+cmd:option('-type',               'float',                   'float or cuda')
 cmd:option('-bufferSize',         5120,                     'buffer size')
 cmd:option('-devid',              1,                        'device ID (if using CUDA)')
 cmd:option('-nGPU',               1,                        'num of gpu devices used')
